@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solo Leveling - Chapter 1</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
 
 <header>Solo Leveling - Chapter 1</header>
@@ -12,16 +20,19 @@
 // Ganti baseURL dengan folder gambar chapter kau
 const baseURL = "https://URL-GAMBAR-ANDA/solo-leveling/chapter-1/";
 
-// Contoh auto load 20 halaman
-for (let i = 1; i <= 20; i++) {
+// Auto load 20 halaman
+const totalPages = 20;
+
+for (let i = 1; i <= totalPages; i++) {
   const img = document.createElement("img");
   img.src = baseURL + String(i).padStart(3, "0") + ".webp";
   img.loading = "lazy";
   img.style.display = "block";
   img.style.marginBottom = "12px";
-  img.style.width = "100%"; // responsive lebar penuh
+  img.style.width = "100%";
   document.getElementById("reader").appendChild(img);
 }
 </script>
 
 </body>
+  </html>
