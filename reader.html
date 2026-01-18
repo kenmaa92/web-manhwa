@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solo Leveling - Chapter 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>Solo Leveling - Chapter 1</header>
+
+<div id="reader"></div>
+
+<script>
+// Ganti URL ini dengan link gambar chapter kau
+const baseURL = "https://URL-GAMBAR-ANDA/solo-leveling/chapter-1/";
+
+// Contoh: 20 halaman
+for (let i = 1; i <= 20; i++) {
+  const img = document.createElement("img");
+  img.src = baseURL + String(i).padStart(3, "0") + ".webp";
+  img.loading = "lazy";
+  document.getElementById("reader").appendChild(img);
+}
+</script>
+
+</body>
+  </html>
